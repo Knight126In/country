@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Future-Year</title>
+  <meta name="description" content="Predicts what the next year is using complex ALU calculations">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: #f8f9fa;
+      color: #333;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 24px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Future-Year</h1>
+  <p>Predicts what the next year is using complex ALU calculations</p>
+
+  <input type="number" id="currentYear" placeholder="Enter current year" />
+  <button onclick="predict()">Calculate</button>
+
+  <div id="result"></div>
+
+  <script>
+    function predict() {
+      const year = parseInt(document.getElementById("currentYear").value);
+      const result = document.getElementById("result");
+      if (isNaN(year)) {
+        result.textContent = "Please enter a valid year!";
+        return;
+      }
+      result.textContent = "Running complex ALU calculations...";
+
+      setTimeout(() => {
+        result.textContent = "The next year is: " + (year + 1);
+      }, 3000); // Fake delay
+    }
+  </script>
+</body>
+</html>
