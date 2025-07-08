@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Country Facts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>World Country Facts</h1>
+
+    <select id="country-select">
+      <option value="">Select a country</option>
+    </select>
+
+    <div id="country-details" class="card hidden">
+      <h2 id="country-name"></h2>
+      <p><strong>Capital:</strong> <span id="capital"></span></p>
+      <p><strong>GDP:</strong> <span id="gdp"></span></p>
+      <p><strong>Population:</strong> <span id="population"></span></p>
+      <p><strong>Area:</strong> <span id="area"></span></p>
+      <p><strong>Population Density:</strong> <span id="density"></span></p>
+      <p><strong>Political Leaning:</strong> <span id="political"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
